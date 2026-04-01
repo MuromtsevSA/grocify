@@ -3,18 +3,17 @@
   "compilerOptions": {
     "strict": true,
     "paths": {
-      "@/*": [
-        "./src/*"
-      ],
-      "@/assets/*": [
-        "./assets/*"
-      ]
-    }
+      "@/*": ["./src/*"],
+      "@/assets/*": ["./assets/*"]
+    },
+    "types": [], // Добавьте эту строку, чтобы отключить автоматическую загрузку типов
+    "skipLibCheck": true // Или добавьте это для пропуска проверки типов в библиотеках
   },
   "include": [
     "**/*.ts",
     "**/*.tsx",
     ".expo/types/**/*.ts",
-    "expo-env.d.ts"
+    "expo-env.d.ts",
+    "nativewind-env.d.ts"
   ]
 }
