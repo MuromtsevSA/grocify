@@ -8,11 +8,15 @@
     "android": "expo run:android",
     "ios": "expo run:ios",
     "web": "expo start --web",
-    "lint": "expo lint"
+    "lint": "expo lint",
+    "db:push": "drizzle-kit push",
+    "seed:grocery": "node ./scripts/seed-grocery.cjs"
   },
   "dependencies": {
     "@clerk/expo": "^3.1.6",
+    "@neondatabase/serverless": "^1.1.0",
     "babel-preset-expo": "~54.0.10",
+    "drizzle-orm": "^0.45.2",
     "expo": "~54.0.33",
     "expo-auth-session": "~7.0.10",
     "expo-constants": "~18.0.13",
@@ -50,6 +54,7 @@
     "@types/keyv": "^3.1.4",
     "@types/react": "~19.1.10",
     "@types/responselike": "^1.0.3",
+    "drizzle-kit": "^0.31.10",
     "typescript": "~5.9.2"
   },
   "private": true
